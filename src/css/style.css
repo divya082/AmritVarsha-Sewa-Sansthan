@@ -1,0 +1,85 @@
+*{margin:0; padding:0; font-family: 'Rubik', sans-serif;}
+
+
+
+.navsection{
+	width:100%; height:20vh;
+	display:flex; justify-content: space-around;
+	align-items: center;
+	background-image:linear-gradient(to top, #fff 80%, #facb8e 20%);
+
+}
+
+.logo{
+	width:40%;
+	color:#fff;
+    background-image:linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left:100px;
+    box-sizing: border-box;
+
+}
+
+
+@keyframes aagepiche{
+	from{padding-left:40px;}
+	to{padding-right:40px;}
+	
+}
+
+nav{
+	width:60%;
+	display:flex;
+	justify-content: space-around;
+}
+
+nav a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:rgb(51, 50, 50);
+	font-weight:600;
+	font-size:16px;
+	position:relative;
+}
+
+
+nav a:last-child{
+	color:#4458dc;
+} 
+
+nav a:before{
+	content:"";
+	position:absolute;
+	top:110%;
+	left:0;
+	width:0%;
+	height:2px;
+	border-bottom:2px solid #4458dc;
+	transition:all 0.4s linear;
+}
+
+nav a:hover:before{
+	width:100%; 
+}
+
+
+
+main{
+	height:80vh;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    background:#fdba02a4;
+    overflow-x:hidden;
+    padding: 14vmin 18vmin;
+}
+
+
