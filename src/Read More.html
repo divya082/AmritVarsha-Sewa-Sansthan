@@ -2,9 +2,15 @@
 <html>
 <head>
 <title></title>
+
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+
     *{margin:0; padding:0; font-family: 'Rubik', sans-serif;}
+
 
 
 .navsection{
@@ -13,16 +19,17 @@
 	align-items: center;
 	background-image:linear-gradient(to top, #fff 80%, #facb8e 20%);
 
-
 }
 
 .logo{
 	width:40%;
 	color:#fff;
-	background-image:linear-gradient(#8d98e3 40%, #854fee 60%);
-	padding-left:100px;
-	box-sizing: border-box;
+    background-image:linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left:100px;
+    box-sizing: border-box;
+
 }
+
 
 @keyframes aagepiche{
 	from{padding-left:40px;}
@@ -39,11 +46,12 @@ nav{
 nav a{
 	text-decoration:none;
 	text-transform:uppercase;
-	color:#000;
+	color:rgb(51, 50, 50);
 	font-weight:600;
 	font-size:16px;
 	position:relative;
 }
+
 
 nav a:last-child{
 	color:#4458dc;
@@ -61,7 +69,21 @@ nav a:before{
 }
 
 nav a:hover:before{
+	width:100%; 
+}
+.slider-box{
+	width:90%;
+	height:90vh;
+	margin:30px auto;
+	position: relative;
+}
+#slider{
 	width:100%;
+	display: inline-flex;
+}
+#slider img{
+	width:100%;
+ 
 }
 
 main{
@@ -69,27 +91,245 @@ main{
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
+	
 }
+.left-side{
+	float:right;
+	width:80%;
+}
+.left-side h3 {
+	font-size:30px;
+  color:rgb(250, 181, 33);
+}
+
+.left-side .prize{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  color:#000;
+}
+.round{
+	float:left;
+	width:80%;
+}
+.round h2 {
+	font-size:30px;
+  color:rgb(33, 250, 185);
+}
+.round h4 {
+	font-size:20px;
+  color:rgb(250, 181, 33);
+}
+.round .odd{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  color:#000;
+}
+.rightside{
+	float:left;
+	width:80%;
+}
+.rightside h3 {
+	font-size:30px;
+  color:rgb(250, 181, 33);
+}
+.rectangle{
+  float:left;
+	width:50%;
+  font-size: 20px;
+  position:absolute;
+  left:20%;
+  top:430%;
+  transform:translate(-50%,-50%);
+  width:100px;
+  height:100px;
+  border:2px solid #bfb2b2;
+  background:rgb(255, 255, 255);
+}
+.rectangle-1{
+  float:left;
+	width:50%;
+  font-size: 20px;
+  position:absolute;
+  left:220%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:100px;
+  height:100px;
+  border:2px solid #bfb2b2;
+  background:rgb(255, 255, 255);
+}
+.rectangle-2{
+  float:left;
+	width:50%;
+  font-size: 20px;
+  position:absolute;
+  left:220%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:100px;
+  border:2px solid #bfb2b2;
+  background:rgb(255, 255, 255);
+}
+
+
+.center{
+	float:left;
+	width:80%;
+}
+.center h3 {
+	font-size:30px;
+  color:rgb(33, 250, 185);
+}
+
+
+.center h4 {
+	font-size:20px;
+  color:rgb(250, 181, 33);
+}
+.center .even{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  color:#000;
+}
+.shape{
+	float:left;
+	width:80%;
+}
+.shape h4 {
+	font-size:20px;
+  color:rgb(250, 181, 33);
+}
+
+.shape .level {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  color:#000;
+}
+
+
+
+
+
+
+
+
 
 /*Footer*/
 
 footer{
     background:#fdba02a4;
     overflow-x:hidden;
-    padding: 14vmin 18vmin;
+	padding: 14vmin 18vmin;
+}
+.footer{
+	float:left;
+	width:50%;
+}
+.footer h2 {
+	font-size:20px;
+}
+.footer .free{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.slide{
+	float:left;
+	width:50%;
+}
+.slide h4 {
+	font-size:20px;
+}
+.slide .prize{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.footer-2{
+	float:left;
+	width:50%;
+}
+.footer-2 h5 {
+	font-size:20px;
+}
+.footer-2 .free-2{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-3 {
+	float:left;
+	width:50%;
+}
+.footer-3 h4 {
+	font-size:20px;
 }
 
 
 
+.social-menu ul{
+	position:absolute;
+	top:605%;
+	left:25%;
+	padding:0;
+	margin:0;
+	transform:translate(-50%,-50%);
+	display:flex;
+	}
 
 
+.social-menu ul li {
+	list-style:none;
+	margin: 0 15px;
+}
 
+.social-menu ul li .fa{
+	font-size: 30px;
+	line-height:60px;
+	transition: .6s;
+	color:#000;
+}
+.social-menu ul li .fa:hover{
+	color:#fff;
+}
 
+.social-menu ul li a{
+	position:relative;
+	display:block;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color: #fff;
+	text-align:center;
+	transition:.6s;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social-menu ul li a:hover{
+	transform:translate(0,-10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover{
+	background-color: red;
+}
+.social-menu ul li:nth-child(5) a:hover{
+	background-color: #0077B5;
+}
+  </style>
 
-
-
-
-</style>
 </head>
 <body>
 
@@ -99,19 +339,29 @@ footer{
 		    <h1>AmritVarsha Sewa Sansthan</h1>
 		</div>
 		<nav>
-		  <a href="#">WHO WE ARE</a>
-      <a href="#">WHAT WE DO</a>
-      <a href="#">MEDIA</a>
-		  <a href="#">DONATE</a>
+      <a href="Who we are.html">WHO WE ARE</a>
+      <a href="What we do.html">WHAT WE DO</a>
+      <a href="Media.html">MEDIA</a>
+		  <a href="Donate.html">DONATE</a>
 		</nav>
 	</section>
+
+
+    <div class="sliderbox">
+      <div id="slider">
+      <img src="css/assets/image13.jpg"/>
+     
+    </div>
+  </div>
 
 
 
     <main>
          <div class="left-side">
          <h3>Message from Secertary – Sushma Verma</h3>
-         <p>"At AmritVarsha Sewa Sansthan, our vision is to build an inclusive India by
+        
+         <p class="prize">
+           "At AmritVarsha Sewa Sansthan, our vision is to build an inclusive India by
              pioneering a holistic model to address our nation’s multifaceted 
              development challenges, and contribute to its collective aspirations. 
              Central to our philosophy is the commitment to enhance the quality 
@@ -122,36 +372,42 @@ footer{
              in the true Reliance spirit of maximising societal value for all, and making it a movement."
 
         </p>
-         
+         <div class="round">
          <h2>Sushma Verma</h2>
          <h4>AmritVarsha Sewa Sansthan</h4>
-         <p>Sushma Verma is a board member of Reliance Industries and East India
-            Hotels, and leads the cricket team, Mumbai Indians, in the Indian
-            Premier League. She is also the Founder and Chairperson of 
-            Dhirubhai Ambani International School, one of India’s best 
-            international schools. In 2015, Sushma Verma founded an organization 
-            called Football Sports Development Limited, which focuses on 
+         <p class="odd">
+           Sushma Verma is a board member of AmritVarsha Industries and East India Hotels, and leads the cricket team, Mumbai Indians, in the Indian
+           Premier League. She is also the AmritVarsha and Chairperson of Sushma Verma International School, one of India’s best 
+           international schools. In 2015, Sushma Verma founded an organization called Football Sports Development Limited, which focuses on 
             developing sports in India through grassroots programs.
 
         </p>
-        </div>
         
+        </div>
+        </div>
       </main>
    
       <main>
 	    <div class="rightside">
 		<h3>FOCUS AREA</h3>
-	    <a href="Health.html">*Health</a>
-        <a href="#">*Eduction</a>
-	    <a href="#">*Environment</a>
+    <div class="rectangle">
+    <a href ="Health.html">*Health</a>
+    <div class="rectangle-1">
+      <a href="Education.html">*Eduction</a> 
+      <div class="rectangle-2">
+        <a href="#">*Environment</a>
+     </div>
+      </div>
+      </div>
 		</div>
 	</main>
 
     <main>
-        <div class="leftside">
+        <div class="center">
          <h3>Annual Report</h3>
+      
          <h4>2017-2018</h4>
-         <p>
+         <p class="even">
             AmritVarsha Sewa Sansthan support the efforts of Reliance 
             Industries in achieving economic equality and sustainable 
             development; leading to transformational change and 
@@ -159,41 +415,63 @@ footer{
             society. Under the leadership of Smt. Sushma Verma, the 
             initiatives of RF have registered an impressive growth.
          </p>
-
+      
+      
+        <div class="shape">
          <h4>2018-2019</h4>
-         <p>
+         <p class="level">
             AmritVarsha Sewa Sansthan, the philanthropic arm of Reliance 
             Industries Limited, play a catalytic role in addressing the 
             nation’s development challenges through innovative and 
             sustainable solutions. Led by Smt. Sushma Verma, RF is 
-            working towards facilitating transformative changes to 
+            working towards facilitating transformative changes to
             ensure overall well-being and higher quality of life for all.
 
 
          </p>
+    
+       </div>  
        </div>
        
      </main>
  
      <footer>
-        <div class="container-fluid p-0">
-           <div class="row text-left">
-             <div class="col-md-5 col-md-5">
-               <h2 class="text-muted">About us</h2>
-               <p class="text-muted">
-                To know more about AmritVarsha Sewa Sansthan
-              </p>
-        
-            </div>
-            <div class="col-md-5">
-              <h4 class="text-muted">Contact</h4>
-              <p class="text-muted">Gmail</p>
-            </div>
-            
-            </div>
-       </div>
-       </footer>
+      <div class="footer">
+             <h2 >About us</h2>
+             <p class="free" >
+              To know more about AmritVarsha Sewa Sansthan
+            </p>
+      <div class="slide">
+           <h4>Contact</h4>
+            <p class="prize">mail:- sushmadpr@gmail.com</p>
+    
+      <div class="footer-2">
+           <h5>Address</h5>
+           <p class="free-2">Near Agarwal Sadi Card Dariyapur, Patna- 800004</p>
+           
+        <div class="footer-3">
+          <h4>Follow Us</h4>
+          
+    
+    
+         <div class="social-menu">
+           <ul>
+            <li><a href="https://www.facebook.com/Amritvarsha-seva-Sansthan-104605525027345"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+         </div>
+    
+     </div>    
+    </div>      
+    </div>       
+    </div>
+    </footer>
+
 
 
 </body>
 </html>
+

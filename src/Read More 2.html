@@ -2,9 +2,331 @@
 <html>
 <head>
 <title></title>
-	<link rel="stylesheet" href="css/style.css">
+
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <style>
+    
+    *{margin:0; padding:0; font-family: 'Rubik', sans-serif;}
+
+
+
+.navsection{
+	width:100%; height:20vh;
+	display:flex; justify-content: space-around;
+	align-items: center;
+	background-image:linear-gradient(to top, #fff 80%, #facb8e 20%);
+
+}
+
+.logo{
+	width:40%;
+	color:#fff;
+    background-image:linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left:100px;
+    box-sizing: border-box;
+
+}
+
+
+@keyframes aagepiche{
+	from{padding-left:40px;}
+	to{padding-right:40px;}
 	
+}
+
+nav{
+	width:60%;
+	display:flex;
+	justify-content: space-around;
+}
+
+nav a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:rgb(51, 50, 50);
+	font-weight:600;
+	font-size:16px;
+	position:relative;
+}
+
+
+nav a:last-child{
+	color:#4458dc;
+} 
+
+nav a:before{
+	content:"";
+	position:absolute;
+	top:110%;
+	left:0;
+	width:0%;
+	height:2px;
+	border-bottom:2px solid #4458dc;
+	transition:all 0.4s linear;
+}
+
+nav a:hover:before{
+	width:100%; 
+}
+.slider-box{
+	width:90%;
+	height:90vh;
+	margin:30px auto;
+	position: relative;
+}
+#slider{
+	width:90%;
+	display: inline-flex;
+}
+#slider img{
+	width:60%;
+}
+.slider-box1{
+	width:90%;
+	height:90vh;
+	margin:30px auto;
+	position: relative;
+}
+#slider1{
+	width:20%;
+	display: inline-flex;
+}
+#slider img{
+	width:60%;
+}
+
+main{
+	height:80vh;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	
+}
+
+.rectangle{
+	float:left;
+	width:50%;
+	position:absolute;
+	left:80%;
+	top:42%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	height:310px;
+	border:2px solid #bfb2b2;
+	background:rgb(255, 255, 255);
+  }
+
+  .rectangle h3 {
+	font-size:30px;
+	float:center;
+	margin-top: 20px;
+	margin-left:120px;
+    color:rgb(12, 191, 113);
+}
+
+.rectangle .p{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left:20px;
+    color:rgb(33, 30, 30);
+}
+.box .btn-4{
+	text-decoration:none;
+	font-weight: 900;
+	font-size: 14px;
+	margin-top: 8px;
+	margin-left:150px;
+	text-align: center;
+	padding: 12px 25px;
+	cursor: pointer;
+	text-transform:uppercase;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 50px;
+	color:#fff;
+	background-image:linear-gradient(to right,#4458dc 0%,#854fee 100%);
+	box-shadow:0 10px 30px rgba(118,85,225,.3);
+}
+.box .btn-4:hover{
+	border:2px solid #4458dc;
+	color:#222;
+	background-color:#fff;
+	box-shadow:none;
+	background-image:none;
+}
+
+.rectangle-1{
+	float:left;
+	width:50%;
+	position:absolute;
+	left:20%;
+	top:100%;
+	transform:translate(-50%,-50%);
+	width:450px;
+	height:410px;
+	border:2px solid #bfb2b2;
+	background:rgb(255, 255, 255);
+  }
+
+  .rectangle-1 h3 {
+	font-size:30px;
+	float:center;
+	margin-top: 20px;
+	margin-left:150px;
+  color:rgb(12, 191, 113);
+}
+
+.rectangle-1 .t{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left:40px;
+    color:rgb(33, 30, 30);
+}
+.rectangle-1 .t-1{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left:40px;
+  color:rgb(33, 30, 30);
+}
+.box .btn-5{
+	text-decoration:none;
+	font-weight: 900;
+	font-size: 14px;
+	margin-top: 8px;
+	margin-left:150px;
+	text-align: center;
+	padding: 12px 25px;
+	cursor: pointer;
+	text-transform:uppercase;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 50px;
+	color:#fff;
+	background-image:linear-gradient(to right,#4458dc 0%,#854fee 100%);
+	box-shadow:0 10px 30px rgba(118,85,225,.3);
+}
+.box .btn-5:hover{
+	border:2px solid #4458dc;
+	color:#222;
+	background-color:#fff;
+	box-shadow:none;
+	background-image:none;
+}
+/*Footer*/
+
+footer{
+    background:#fdba02a4;
+    overflow-x:hidden;
+	  padding: 14vmin 18vmin;
+}
+.footer{
+	float:left;
+	width:50%;
+}
+.footer h2 {
+	font-size:20px;
+}
+.footer .free{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.slide{
+	float:left;
+	width:50%;
+}
+.slide h4 {
+	font-size:20px;
+}
+.slide .prize{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.footer-2{
+	float:left;
+	width:50%;
+}
+.footer-2 h5 {
+	font-size:20px;
+}
+.footer-2 .free-2{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-3 {
+	float:left;
+	width:50%;
+}
+.footer-3 h4 {
+	font-size:20px;
+}
+
+
+
+.social-menu ul{
+	position:absolute;
+	top:210%;
+	left:25%;
+	padding:0;
+	margin:0;
+	transform:translate(-50%,-50%);
+	display:flex;
+	}
+
+
+.social-menu ul li {
+	list-style:none;
+	margin: 0 15px;
+}
+
+.social-menu ul li .fa{
+	font-size: 30px;
+	line-height:60px;
+	transition: .6s;
+	color:#000;
+}
+.social-menu ul li .fa:hover{
+	color:#fff;
+}
+
+.social-menu ul li a{
+	position:relative;
+	display:block;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color: #fff;
+	text-align:center;
+	transition:.6s;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social-menu ul li a:hover{
+	transform:translate(0,-10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover{
+	background-color: red;
+}
+.social-menu ul li:nth-child(5) a:hover{
+	background-color: #0077B5;
+}
+
+
+</style> 
 </head>
 <body>
 
@@ -14,72 +336,111 @@
 		    <h1>AmritVarsha Sewa Sansthan</h1>
 		</div>
 		<nav>
-		  <a href="Who we are.html">WHO WE ARE</a>
-      <a href="#">WHAT WE DO</a>
-      <a href="#">MEDIA</a>
-		  <a href="#">DONATE</a>
+			<a href="Who we are.html">WHO WE ARE</a>
+            <a href="What we do.html">WHAT WE DO</a>
+            <a href="Media.html">MEDIA</a>
+		    <a href="Donate.html">DONATE</a>
+	
 		</nav>
 	</section>
 
-  <div id="container">
-    <div id="sliderbox">
+  
+  
+    <div class="sliderbox">
+		<div id="slider">
       <img src="css/assets/image2.jpg"/>
-    </div>
-   </div>
+      </div>
+    </div>  
+    </div>   
+
   
 
     <main>
-        <div class="center">
+        <div class="rectangle">
        <h3>Health</h3>
 
-        <p> AmritVarsha Sewa Sansthan has worked towards enhancing access to quality and 
+        <p class="p"> 
+            AmritVarsha Sewa Sansthan has worked towards enhancing access to quality and 
             affordable healthcare in India. The AmritVarsha Sewa Sansthan ‘Health for All’ initiative and 
             integrated healthcare model provides continuum of care to the most 
             vulnerable sections of society, through a network of healthcare
             delivery mechanisms.
          </p>
-         <a href="Read More 4.html" class="btn">Read More </a>
+         <div class="box">
+          <div class="hover">
+         <a href="Read More 4.html" class="btn-4">Read More </a>
+         </div>
+         </div>
+       </div>         
+      
+          
+          
+    <div class="sliderbox1">
+		<div id="slider1">
+      <img src="css/assets/image14.jpg"/>
+      </div>
+    </div>  
+    </div>   
 
-         <div id="container">
-          <div id="sliderbox">
-            <img src="css/assets/image4.jpg"/>
-           </div>
-          </div>      
 
+       <div class="rectangle-1">
        <h3>Education</h3>
-       <p>
+       <p class="t">
         There are significant inequalities in access to secondary education as far as 
         income, gender, social group and geography are concerned. The capacity
         of the secondary schooling system needs to be significantly expanded across India.
       </p>
 
-     <p>    
+     <p class="t-1">    
         For instance, only 16% of India’s education budget is spent on secondary 
         education compared to 62% for primary education (K., Biswal, 2011; 
         Secondary education in India: Development policies, programmes
         and challenges).
-    </p>   
-    <a href="Read More 5.html" class="btn">Read More</a> 
-    </div>
+    </p> 
+    <div class="box">
+      <div class="hover">
+     <a href="Read More 5.html" class="btn-5">Read More </a>
+     </div>
+     </div>
+   </div>     
+    
+
     </main>
+
+    
     <footer>
-        <div class="container-fluid p-0">
-           <div class="row text-left">
-             <div class="col-md-5 col-md-5">
-               <h2 class="text-muted">About us</h2>
-               <p class="text-muted">
-                To know more about AmritVarsha Sewa Sansthan
-              </p>
-        
-            </div>
-            <div class="col-md-5">
-              <h4 class="text-muted">Contact</h4>
-              <p class="text-muted">Gmail</p>
-            </div>
-            
-            </div>
-       </div>
-       </footer>
+      <div class="footer">
+             <h2 >About us</h2>
+             <p class="free" >
+              To know more about AmritVarsha Sewa Sansthan
+            </p>
+      <div class="slide">
+           <h4>Contact</h4>
+            <p class="prize">mail:- sushmadpr@gmail.com</p>
+    
+      <div class="footer-2">
+           <h5>Address</h5>
+           <p class="free-2">Near Agarwal Sadi Card Dariyapur, Patna- 800004</p>
+           
+        <div class="footer-3">
+          <h4>Follow Us</h4>
+    
+         <div class="social-menu">
+           <ul>
+			<li><a href="https://www.facebook.com/Amritvarsha-seva-Sansthan-104605525027345"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+         </div>
+    
+     </div>    
+    </div>      
+    </div>       
+    </div>
+    </footer>
+
 
 
 
