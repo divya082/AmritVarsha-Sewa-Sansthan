@@ -60,19 +60,7 @@ nav a:before{
 nav a:hover:before{
 	width:100%; 
 }
-.slider-box{
-	width:90%;
-	height:90vh;
-	margin:30px auto;
-	position: relative;
-}
-#slider{
-	width:100%;
-	display: inline-flex;
-}
-#slider img{
-	width:100%;
-}
+
 main{
 	height:80vh;
 	display:flex;
@@ -87,7 +75,7 @@ main{
 	width:50%;
 	position:absolute;
 	left:15%;
-	top:140%;
+	top:160%;
 	transform:translate(-50%,-50%);
 	width:300px;
 	height:300px;
@@ -140,7 +128,7 @@ main{
 	width:50%;
 	position:absolute;
 	left:45%;
-	top:140%;
+	top:160%;
 	transform:translate(-50%,-50%);
 	width:300px;
 	height:300px;
@@ -190,7 +178,7 @@ main{
 	width:50%;
 	position:absolute;
 	left:75%;
-	top:140%;
+	top:160%;
 	transform:translate(-50%,-50%);
 	width:300px;
 	height:300px;
@@ -294,7 +282,7 @@ footer{
 
 .social-menu ul{
 	position:absolute;
-	top:255%;
+	top:275%;
 	left:25%;
 	padding:0;
 	margin:0;
